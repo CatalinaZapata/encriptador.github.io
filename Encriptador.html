@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es"
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Encriptador.css">
+    </head>
+    <body>
+        <header>
+            <title>Encriptador</title>
+            <img src="imagenes/Logo.png" alt="Logo de alura a">
+            <nav></nav>
+        </header>
+        <main>
+            <section>
+                <textarea class="emisor" cols="40" rows="1" placeholder="Ingrese texto aquí"></textarea>
+                <div class="botones">
+                    <input type="submit" value="Encriptar" class="encriptar" onclick="botónEncriptar()">
+                    <input type="submit" value="Desencriptar" class="desencriptar" onclick="botónDesencriptar()">
+                </div>
+            </section>
+            <section>
+                <textarea class="receptor" cols="45" rows="25"></textarea>
+                <input type="submit" value="Copiar" class="copiar" onclick="botónCopiar()">
+            </section>
+        </main>
+        <script src="Encriptador.js"></script>
+    </body>
+    <footer></footer>
+</html>
