@@ -1,5 +1,6 @@
-let emisor = document.querySelector(".emisor");
-let receptor = document.querySelector(".receptor");
+const emisor = document.querySelector(".emisor");
+const receptor = document.querySelector(".receptor");
+//let muneco = document.querySelector(".muneco");
 const x = ["e","i","a","o","u"]; 
 const y = ["enter","imes","ai","ober","ufat"];
 
@@ -10,9 +11,12 @@ function encriptar(texto){
                 texto = texto.replaceAll(x[i],y[i]);}}
             return texto;}
 function botónEncriptar(){
-    let textoEncriptado = encriptar(emisor.value);
+    const textoEncriptado = encriptar(emisor.value);
     receptor.value = textoEncriptado;
-    emisor.value = ""}
+    //receptor.style.backgroundImage="none";
+    //document.getElementById("muneco").style.display = "none";
+    //document.getElementById("texto").style.display = "none";
+    emisor.value = "";}
 
 function desencriptar(texto){
     texto = texto.toLowerCase();
@@ -21,9 +25,9 @@ function desencriptar(texto){
             texto = texto.replaceAll(y[i],x[i]);}}
         return texto;}
 function botónDesencriptar(){
-    let textoDesencriptado = desencriptar(emisor.value);
+    const textoDesencriptado = desencriptar(emisor.value);
     receptor.value = textoDesencriptado;
-    emisor.value = ""}
+    emisor.value = "";}
 
 function botónCopiar(){
     receptor.select();
