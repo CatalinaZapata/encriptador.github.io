@@ -1,6 +1,5 @@
-const emisor = document.querySelector(".emisor");
-const receptor = document.querySelector(".receptor");
-//let muneco = document.querySelector(".muneco");
+let emisor = document.querySelector(".emisor");
+let receptor = document.querySelector(".receptor");
 const x = ["e","i","a","o","u"]; 
 const y = ["enter","imes","ai","ober","ufat"];
 
@@ -11,11 +10,11 @@ function encriptar(texto){
                 texto = texto.replaceAll(x[i],y[i]);}}
             return texto;}
 function botónEncriptar(){
-    const textoEncriptado = encriptar(emisor.value);
+    let textoEncriptado = encriptar(emisor.value);
     receptor.value = textoEncriptado;
-    //receptor.style.backgroundImage="none";
-    //document.getElementById("muneco").style.display = "none";
-    //document.getElementById("texto").style.display = "none";
+    document.querySelector(".muneco").style.display = "none";
+    document.querySelector(".texto").style.display = "none";
+    document.querySelector(".textop").style.display = "none";
     emisor.value = "";}
 
 function desencriptar(texto){
@@ -25,12 +24,16 @@ function desencriptar(texto){
             texto = texto.replaceAll(y[i],x[i]);}}
         return texto;}
 function botónDesencriptar(){
-    const textoDesencriptado = desencriptar(emisor.value);
+    let textoDesencriptado = desencriptar(emisor.value);
     receptor.value = textoDesencriptado;
+    document.querySelector(".muneco").style.display = "none";
+    document.querySelector(".texto").style.display = "none";
+    document.querySelector(".textop").style.display = "none";
     emisor.value = "";}
 
+function mostrarBotón(){
+    document.querySelector(".copiar").style.display = "block";}
 function botónCopiar(){
     receptor.select();
-    //Document.execCommand.clipboard("copy");
     navigator.clipboard.writeText(receptor.value);
     receptor.value = "";};

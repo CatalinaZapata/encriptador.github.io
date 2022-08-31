@@ -20,15 +20,15 @@
                         <p class="advertencia">Solo letras minúsculas y sin acentos.</p>
                     </div>
                     <div class="botones">
-                        <input type="submit" value="Encriptar" class="encriptar" onclick="botónEncriptar()">
-                        <input type="submit" value="Desencriptar" class="desencriptar" onclick="botónDesencriptar()">
+                        <input type="submit" value="Encriptar" class="encriptar" onclick="botónEncriptar(); mostrarBotón()">
+                        <input type="submit" value="Desencriptar" class="desencriptar" onclick="botónDesencriptar(); mostrarBotón()"">
                     </div>
                 </section>
                 <section class="derecha">
                     <textarea class="receptor" cols="23" rows="1"></textarea>
                     <img src="imagenes/Muñeco.png" alt="Muñeco alura" class="muneco">
                     <h1 class="texto">Ningún mensaje fue encontrado.</h1>
-                    <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p class="textop">Ingresa el texto que desees encriptar o desencriptar.</p>
                     <input type="submit" value="Copiar" class="copiar" onclick="botónCopiar()">
                 </section>
             </main>
@@ -36,6 +36,6 @@
     </body>
     <script src="script.js"></script>
     <footer>
-        
+        <p class="rodapie">&copy Catalina Zapata 2022</p>
     </footer>
 </html>

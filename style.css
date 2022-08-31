@@ -35,11 +35,11 @@ height: 5%;
 font-size: 25px;
 color: #0A3871;
 border: none;
-outline: none;}
+outline: none;
+opacity: 0.8;}
 
 .vector{
 float: left;
-display: inline-block;
 margin: 0% 0% 0% 17%;}
 
 .advertencia{
@@ -81,8 +81,6 @@ background: #FFFFFF;}
 float: left;
 margin: 4% 0% 0% 3%;
 background: #FFFFFF;
-/*background-image: url("imagenes/Muñeco.png");
-background-repeat: no-repeat;*/
 padding: 2% 0%;
 border: none;
 outline: none;
@@ -93,8 +91,7 @@ color: #495057;}
 float: left;
 margin: 20% 5% 0% 5%;
 width: 90%;
-height: auto;
-}
+height: auto;}
 
 .derecha h1{
 float: left;
@@ -122,13 +119,14 @@ background: #D8DFE8;
 border-radius: 16px;
 font-size: 16px;
 text-align: center;
-color: #0A3871;}
+color: #0A3871;
+display: none;}
 
-/*
-.receptor{position: relative;
-          margin-top: 20px;
-          margin-left: 90px;
-          background-image: url("imagenes/Muñeco.png");
-          background-repeat: no-repeat;
-          background-position: 18px;
-          background-size: 300px;}*/
+.rodapie{
+margin: 0%;
+font-family: "inter", sans-serif;
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+color: #0A3871;
+opacity: 0.5;}
