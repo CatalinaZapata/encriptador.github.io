@@ -131,6 +131,24 @@ text-align: center;
 color: #0A3871;
 opacity: 0.5;}
 
+/*TAMAÑO TABLET*/
+@media screen and (max-width: 800px){
+.caja, .izquierda {width: 800px;
+margin: 0% 1% 5% 1%;}
+.emisor {width: 600px;
+margin: 10%;}
+.advertencia{margin: 190% 0% 0% 0%;}
+.receptor{width: 300px;
+margin: 0% 6%;}
+.encriptar, .desencriptar {width: 80%;}
+.derecha{width: 350px;
+    margin: 0px 230px;}
+.muneco{display: none;}
+.derecha h1 {margin: 0px 0px 10px 20px;}
+.derecha p {margin: 0px 0px 10px 5px;}
+.texto{font-size: 30px;}
+.rodapie{margin: 60% 0% 0% 20%;}}
+
 /*TAMAÑO CELULAR*/
 @media screen and (max-width:400px){
 .caja, .izquierda {width: 400px;
@@ -146,9 +164,4 @@ margin: 0% 6%;}
 .derecha h1 {margin: 0px 0px 10px 20px;}
 .derecha p {margin: 0px 0px 10px 5px;}
 .texto{font-size: 30px;}
-.rodapie{margin: 25% 0% 0% 0%;}
-}
-
-/*TAMAÑO TABLET*/
-/*@media screen and (max-width: 800px){
-.caja{width: 800px;}}*/
+.rodapie{margin: 25% 0% 0% 0%;}}
