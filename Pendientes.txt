@@ -1,0 +1,5 @@
+hacer que bloquee palabra con tildes, caracteres especiales y mayus (opcional, que lance un pop de aviso. si se ve muy saturado, sacalo).
+dejar en tamaño fijo .izquierda
+poner iconos en footer de mi in y mi github y que ridireccione a las webs
+poner efectos de movimiento a botones
+hacer en tableta

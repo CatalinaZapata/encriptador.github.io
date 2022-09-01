@@ -51,7 +51,7 @@ margin: 150% 0% 0% 0%;
 margin: 46% 0 0 17%;}
 
 .encriptar{
-margin: 0% 5% 0% 0%;
+margin: 0% 5% 2% 0%;
 width: 40%;
 padding: 4% 0%;
 background: #0A3871;
@@ -130,3 +130,25 @@ font-weight: bold;
 text-align: center;
 color: #0A3871;
 opacity: 0.5;}
+
+/*TAMAÑO CELULAR*/
+@media screen and (max-width:400px){
+.caja, .izquierda {width: 400px;
+margin: 0% 1% 5% 1%;}
+.emisor {width: 300px;
+margin: 10%;}
+.receptor{width: 300px;
+margin: 0% 6%;}
+.encriptar, .desencriptar {width: 80%;}
+.derecha{width: 350px;
+    margin: 0px 30px;}
+.muneco{display: none;}
+.derecha h1 {margin: 0px 0px 10px 20px;}
+.derecha p {margin: 0px 0px 10px 5px;}
+.texto{font-size: 30px;}
+.rodapie{margin: 25% 0% 0% 0%;}
+}
+
+/*TAMAÑO TABLET*/
+/*@media screen and (max-width: 800px){
+.caja{width: 800px;}}*/
